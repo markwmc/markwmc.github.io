@@ -1,10 +1,79 @@
 
 header {
-    width: auto;
-    background-color: silver;
-    opacity: 80%;
+    width:auto;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 1), rgb(60, 2, 254));
+    /* opacity: 80%; */
+    overflow: auto;
 };
 
-h1 {
-    color: red;
+header a {
+    text-decoration: none;
+   padding: 2px, 2px, 2px, 2px;
+   display: inline-block;
+   border-style: inset;  
+
+}
+
+nav li {
+    float:left;
+    overflow:hidden;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: medium;
+}
+li a:visited {
+color:rgb(199, 74, 240)
+}
+
+li a:hover {
+    color: cyan
+}
+/* a:hover {
+    
+} */
+
+li a {
+    list-style-type: none;
+    color:azure
+}
+
+
+.nasa {
+    width: 100vw;
+    height:100vh;
+}
+iframe {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+ .blink {
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 900px;
+    top: 15px;
 }
