@@ -1,10 +1,52 @@
 
 header {
-    width: auto;
-    background-color: silver;
-    opacity: 80%;
+    width:auto;
+    background-image: linear-gradient(to bottom right, rgb(6, 24, 97), rgb(60, 2, 254));
+    /* opacity: 80%; */
+    overflow: auto;
 };
 
-h1 {
-    color: red;
+header a {
+    text-decoration: none;
+   padding: 2px, 2px, 2px, 2px;
+   display: inline-block;
+   border-style: inset;  
+
+}
+
+nav li {
+    float:left;
+    overflow:hidden;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: medium;
+}
+/* a:visited {
+
+} */
+
+/* a:hover {
+    
+} */
+
+li {
+    list-style-type: none;
+    color:azure
+}
+
+ .blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
