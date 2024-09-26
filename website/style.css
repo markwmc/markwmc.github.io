@@ -1,7 +1,7 @@
 
 header {
     width:auto;
-    background-image: linear-gradient(to bottom right, rgb(6, 24, 97), rgb(60, 2, 254));
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 1), rgb(60, 2, 254));
     /* opacity: 80%; */
     overflow: auto;
 };
@@ -21,21 +21,37 @@ nav li {
     padding: 14px 16px;
     font-size: medium;
 }
-/* a:visited {
+li a:visited {
+color:rgb(199, 74, 240)
+}
 
-} */
-
+li a:hover {
+    color: cyan
+}
 /* a:hover {
     
 } */
 
-li {
+li a {
     list-style-type: none;
     color:azure
 }
 
+
+.nasa {
+    width: 100vw;
+    height:100vh;
+}
+iframe {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
  .blink {
-    animation: blink 1s infinite;
+    animation: blink 5s infinite;
 }
 
 @keyframes blink {
@@ -49,4 +65,15 @@ li {
     100% {
         opacity: 1;
     }
+}
+
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 900px;
+    top: 15px;
 }
