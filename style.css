@@ -77,3 +77,11 @@ iframe {
     left: 900px;
     top: 15px;
 }
+
+input:invalid {
+    border: 2px solid red;
+};
+
+input:valid {
+    border: 2px solid black
+}
