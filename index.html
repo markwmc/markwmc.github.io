@@ -6,8 +6,7 @@
   <title>Welcome to my space</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
- <script>
-</script>
+ <script src="contact.js" defer></script>
 
 <body>
   <header>
@@ -33,19 +32,25 @@
     <div>
       <aside style="float:right; background-color:rgb(3, 64, 176); padding:10px; border-radius: 1em">
         <h1 style="color:azure">Let's Talk!</h1>
-        <form action="/formHandler" method="post" style="display:grid; padding: 1em; ">
+        <form id="form" action="/formHandler" method="post" style="display:grid; padding: 1em; ">
           <label for="fname" style="padding-bottom: 5px; color:azure">First name:</label>
           <input type="text" id="fname" name="fname" minlength="1" maxlength="20" required style="background-color:beige" aria-label="required"></input>
           <label for="lname" style="padding-bottom:5px; padding-top:5px; color: azure">Last name:</label>
           <input type="text"
-            id="lname" id="lname" name="lname" minlength="1" maxlength="45" required aria-label="required" style="background-color:beige"></input>
+            id="lname" name="lname" minlength="1" maxlength="45" required aria-label="required" style="background-color:beige"></input>
           <label for="email" style="padding-bottom: 5px; padding-top: 5px; color:azure">Email:</label>
           <input type="email" id="email" name="email" minlength="9" maxlength="40" required aria-label="reqired" style="background-color:beige"></input>
           <label for="textarea" id="textarea" name="textarea" style="padding-bottom:5px; padding-top:5px; color: azure">Message:</label>
           <textarea type="text" id="comments" name="comments" rows="4" cols="50" style="margin-bottom: 10px; background-color:beige; vertical-align: top" minlength="0" maxlength="500"></textarea>
-          <button type="button" id="submit" name="submit" disabled style="width:80px; margin:auto">Send It!</button>
+          <button type="submit" id="submit" name="submit" style="width:80px; margin:auto">Send It!</button>
           </form></aside></div>
     </section>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close"> &times;</span>
+        <p id="modal-message"></p>
+      </div>
+    </div>
     <footer></footer>
   </body>
 </html>
