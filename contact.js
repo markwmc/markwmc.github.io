@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return response.json();
         } else {
           console.error("Form failed");
-          modalMessage.textContent = 'Oh no! Something went wrong!';
+          modalMessage.textContent = 'Github Pages does not support Dynamic websites; I am working on another option.';
           modal.style.display = 'block';
           throw new Error("form submission error");
         }
