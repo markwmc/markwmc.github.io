@@ -9,4 +9,4 @@ This is my personal website. I am building it from the ground up and trying to u
 
 
 ## Technologies
-This web app is build using HTML, CSS, Javascript, with Node.js, Express, cors, and sqlite3.
+This web app is built with HTML, CSS, Javascript, Node.js, Express, cors, and sqlite3.
